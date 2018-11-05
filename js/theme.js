@@ -65,6 +65,14 @@ function throttled(delay, fn) {
 //Hub animation
 var position;
 
+function resetHubPositioner() {
+	var hubPositionerPosition = getPositionInPage($($.scrollify.current().eq(0)).find(".hub-positioner")[0]);
+	$( "#hub" ).animate({
+		left:hubPositionerPosition.left,
+		top:hubPositionerPosition.top
+	  }, { duration: 100, queue: false});
+}
+
 function doBefore(i,panels) {
 	scrolling = true;
 	changeStart = false;
@@ -101,10 +109,17 @@ function doBefore(i,panels) {
 			leftDuration = 300;
 		}
 		if(i==0) {
-			$('.home').removeClass("scrolling");
+			$('.home, .mobile-section-title').removeClass("scrolling");
 		} else {
-			$('.home').addClass("scrolling");
+			$('.home, .mobile-section-title').addClass("scrolling");
 		}
+		if(i !== undefined && $(window).width() < 992) {
+			$('.mobile-section-title ul li').removeClass("active");
+			$(".mobile-section-title ul li:nth-child("+(i+1)+")").addClass("active");
+			$('.mobile-section-title ul').css({transform: 'translate(0px, -'+i*70+'px)'});
+		}
+		/*$('.mobile-section-title').empty();
+		$('.mobile-section-title').append($(scrollDestination).data("section-name"));*/
 		
 		/*if($(scrollOrigin).data("hub-class") != undefined) {
 			$(hub).removeClass($(scrollOrigin).data("hub-class"));
@@ -114,36 +129,41 @@ function doBefore(i,panels) {
 		}*/
 		$(hub).addClass("scrolling");
 		var hubPositionerPosition = getPositionInPage($(scrollDestination).find(".hub-positioner")[0]);
-		if(scrollType === "top") {
-			$( "#hub" ).animate({
+		if($(window).width() >= 992) {
+			if(scrollType === "top") {
+				$( "#hub" ).animate({
+					top:hubPositionerPosition.top,
+				  }, { duration: 1200, easing: "easeInOutCubic", queue: false});	
+			} else if (scrollType === "top left") {
+				$( "#hub" ).animate({
 				top:hubPositionerPosition.top,
-			  }, { duration: 1200, easing: "easeInOutCubic", queue: false});	
-		} else if (scrollType === "top left") {
-			$( "#hub" ).animate({
-			top:hubPositionerPosition.top,
-			  }, { duration: topDuration +100, easing: "easeInOutCubic", queue: false, complete: function() {
-				
-				$( "#hub" ).animate(
-					{
-						left:hubPositionerPosition.left,
-					}, 
-					{ duration: leftDuration-100, easing: "easeInOutCubic", queue: false }
-				 );
-			  }});
-		} else if (scrollType === "left top") {
-			$( "#hub" ).animate({
-				left:hubPositionerPosition.left,
-			  }, { duration: leftDuration, queue: false, easing: "easeInOutCubic", complete: function() {
-				  
+				  }, { duration: topDuration +100, easing: "easeInOutCubic", queue: false, complete: function() {
+					
 					$( "#hub" ).animate(
-					{
-						top:hubPositionerPosition.top,
-					}, 
-					{ duration: topDuration, easing: "easeInOutCubic", queue: false }
-				 );
-			  }});
+						{
+							left:hubPositionerPosition.left,
+						}, 
+						{ duration: leftDuration-100, easing: "easeInOutCubic", queue: false }
+					 );
+				  }});
+			} else if (scrollType === "left top") {
+				$( "#hub" ).animate({
+					left:hubPositionerPosition.left,
+				  }, { duration: leftDuration, queue: false, easing: "easeInOutCubic", complete: function() {
+					  
+						$( "#hub" ).animate(
+						{
+							top:hubPositionerPosition.top,
+						}, 
+						{ duration: topDuration, easing: "easeInOutCubic", queue: false }
+					 );
+				  }});
+			}
+		} else {
+			$( "#hub" ).animate({
+					top:hubPositionerPosition.top,
+				  }, { duration: 1200, easing: "easeInOutCubic", queue: false});
 		}
-		
 		
 			
 	}
@@ -266,6 +286,10 @@ $(document).ready(function(){
 	section : ".section",
 	scrollSpeed: 1200,
 	easing:"easeInOutCubic",
+	afterResize:function() {
+		resetHubPositioner();
+		$.scrollify.move($.scrollify.currentIndex());
+	},
 	setHeights:true,
 	scrollbars:true,
 	step : throttled(0, doStep),
