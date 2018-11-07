@@ -228,6 +228,10 @@ body {
 			}
 			float:left;
 			width: calc(100% - 153px);
+			@media (min-width: 768px) {
+				width: calc(100% - 113px);
+				
+			}
 			text-align:center;
 			ul.title-list {
 				padding:0px;
@@ -1005,7 +1009,22 @@ header {
 				}
 
 			}
-		
+			&.subsection {
+				div[class^=col-] {
+					padding-top:0px;
+					border:none;
+					height:auto;
+					img {
+						width:100%;
+					}
+					.skill-list {
+						@media (max-width: 767px) {
+							display:none;
+						}
+					}
+				}
+			}
+			
 		}
 	}
 
@@ -1018,14 +1037,22 @@ header {
 				top:130px;
 			}
 			@media (min-width: 992px) {
-				top:130px;
+				top:140px;
 			}
 			@media (min-width: 1200px) and (max-width: 1399px) {
-				top:130px;
+				top:150px;
 			}
 			@media (min-width: 1400px) {
-				top:130px;
+				top:160px;
 			}
+		}
+		h1 {
+			text-align:center;
+			padding:0px;
+			margin:0px;
+			font-size:13vw;
+			letter-spacing:1vw;
+			line-height:11vw;
 		}
 	}
 	&[data-section-name="skills"] {
@@ -1073,7 +1100,12 @@ header {
 				padding-top: 70px;
 			}
 		}
-		
+		.section-container .row div[class^=col-]:first-child {
+			
+			@media (min-width: 992px) {
+				padding-top:0px;
+			}
+		}
 	}
 	&[data-section-name="achievements"] {
 		.hub-positioner {
@@ -1202,30 +1234,44 @@ header {
 
 
 
-.timeline {
+.section .section-container .row.subsection.timeline {
 	margin: 0px 0px 50px 0px;
-    padding: 20px 0 5px;
+    padding: 75px 0 5px;
+	@media (max-width:767px) {
+		padding-top:140px;
+	}
 	@media (min-width: 768px) {
 		width: 100%;
+		padding-top:0px;
 	}
     position: relative;
 	.timeline-item {
 		min-height:48px;
-		margin-bottom: 45px;
+		padding-top: 45px;
 		overflow: hidden;
 		position: relative;
 		.bullet {
-			height: 32px;
+			height: 40px;
+			width: 40px;
 			left: 50%;
-			margin-left: -16px;
+			margin-left: -20px;
 			opacity: 1;
 			position: absolute;
-			top: 17px;
+			top: 48px;
 			transform: scale(1);
 			transition: all 800ms ease 0s;
-			width: 32px;
-			background: white;
+			background: @medium-dark;
 			transform: rotate(45deg);
+			border-radius: 2px;
+			&:before {
+				content:"";
+				width: 28px;
+				height: 28px;
+				background: @light;
+				position:absolute;
+				bottom:0;
+				right:0;
+			}
 		}
 		.right-wrapper {
 			float: right;
@@ -1239,20 +1285,220 @@ header {
 			float: left;
 			left: 0;
 			text-align: right;
-			width: 50%;
 			padding-right:50px;
 		}
 		&:first-child {
-			.right-wrapper {
-				padding-left:200px;
-				height:146px;
-			}
-			.left-wrapper {
-				padding-right:200px;
-				height:146px;
-			}
 			.bullet {
 				display:none;
+			}
+		}
+		@media (max-width:767px) {
+			padding-top:45px;
+			h2 {font-size:21px;}
+			h3 {font-size:19px;}
+			.bullet {
+				top:15px;
+			}
+			.right-wrapper {
+				padding-left:15px;
+			}
+			.left-wrapper {
+				padding-right:15px;
+			}
+		}
+		@media (min-width:768px) {
+			h2 {font-size:22px;}
+			h3 {font-size:20px;}
+			&:first-child {
+				@media (min-width:768px) {
+					.right-wrapper:nth-child(2) {
+						padding-left:130px;
+						height:210px;
+					}
+					.left-wrapper:first-child {
+						padding-right:130px;
+						height:210px;
+					}
+				}
+			}
+			padding-top:30px;
+			.bullet {
+				top:35px;
+			}
+			.right-wrapper {
+				padding-left:35px;
+				
+			}
+			.left-wrapper {
+				padding-right:35px;
+			}
+		}
+		@media (min-width:992px) {
+			&:first-child {
+				padding-top:20px;
+				@media (min-width:768px) {
+					.right-wrapper:nth-child(2),.right-wrapper:nth-child(1) {
+						padding-left:170px;
+						height:175px;
+					}
+					.left-wrapper:first-child, .left-wrapper:nth-child(2) {
+						padding-right:170px;
+						height:175px;
+					}
+				}
+			}
+			h2 {font-size:24px;}
+			h3 {font-size:20px;}
+			padding-top:45px;
+			.bullet {
+				top:48px;
+			}
+			.right-wrapper {
+				padding-left:50px;
+			}
+			.left-wrapper {
+				padding-right:50px;
+			}
+		}
+		
+		@media (min-width:1200px) {
+		h2 {font-size:24px;}
+			h3 {font-size:20px;}
+			&:first-child {
+				padding-top:20px;
+				@media (min-width:768px) {
+					.right-wrapper:nth-child(2) {
+						padding-left:200px;
+						height:175px;
+					}
+					.left-wrapper:first-child {
+						padding-right:200px;
+						height:175px;
+					}
+				}
+			}
+		}
+		
+		@media (min-width:1400px) {
+		h2 {font-size:26px;}
+			h3 {font-size:21px;}
+			&:first-child {
+				padding-top:5px;
+				@media (min-width:768px) {
+					.right-wrapper:nth-child(2) {
+						padding-left:200px;
+						height:175px;
+					}
+					.left-wrapper:first-child {
+						padding-right:200px;
+						height:175px;
+					}
+				}
+			}
+		}
+		
+		.excerpt {
+			@media (max-width:767px) {
+				display:none;
+			}
+		}
+	}
+	&.horizontal {
+		@media (min-width : 992px) {
+			height:100%;
+			padding-right:50px;
+			padding-left:0px;
+			
+			.timeline-item {
+				height:100%;
+				float:right;
+				margin-bottom:0px;
+				padding-left:0px;
+				padding-right:70px;
+				padding-top:0px;
+				.bullet {
+					right:30px;
+					top:calc(50% - 17px);
+					left:auto;
+					transform:rotate(135deg);
+				}
+				.left-wrapper {
+					float:none;
+					width:auto;
+					text-align:left;
+					padding:0;
+					height:50%;
+					position:relative;
+					
+					h2 {
+						position:absolute;
+						bottom:0px;
+						padding-bottom:20px;
+						font-size:21px;
+					}
+				}
+				.right-wrapper {
+					float:none;
+					width:auto;
+					height:50%;
+					text-align:left;
+					padding:0;
+					position:relative;
+					padding-top:20px;
+					h3 {
+						font-size:19px;
+						margin-bottom:0px;
+						
+					}
+					.date {
+						padding-bottom:8px;
+					}
+				}
+				&:first-child {
+					.right-wrapper {
+						padding-right:0px;
+					}
+					.left-wrapper {
+						padding-left:0px;
+					}
+				}
+			}
+		}
+		@media (min-width:1200px) {
+			padding-left:20px;
+			padding-right:70px;
+			.timeline-item {
+				padding-right: 80px;
+				.left-wrapper {
+					h2 {
+						font-size: 24px;
+					}
+				}
+				.right-wrapper {
+					h3 {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		@media (min-width:1400px) {
+			padding-left:50px;
+			padding-right:80px;
+			.timeline-item {
+				padding-right: 90px;
+				.left-wrapper {
+					h2 {
+						font-size: 26px;
+					}
+				}
+				.right-wrapper {
+					h3 {
+						font-size: 21px;
+					}
+				}
+				&:first-child {
+					padding-right:0px;
+				}
 			}
 		}
 	}
