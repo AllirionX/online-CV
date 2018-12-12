@@ -22,7 +22,6 @@
 			<div class="inside"></div>
 		</div>
 		<div id="hub"></div>
-		
 	
 		<nav class="menu fixed">
 			<div class="container">
@@ -46,15 +45,18 @@
 					<input type="checkbox" />
 					<span></span>
 					<span></span>
-					<span></span>				
-					<ul class="menu-list">
-						<li><a href="#experiences">Experiences</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#achievements">Achievements</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+					<span></span>	
+					<div class="burger-menu-list-wrapper">
 					<div class="sublayer"></div>
+						<ul class="menu-list">
+							<li><a href="#experiences">Experiences</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#achievements">Achievements</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						
+					</div>
 				</div>
 				<ul class="menu-list hidden-xs">
 						<li><a href="#experiences">Experiences</a></li>
@@ -67,12 +69,12 @@
 		</nav>
 		
 		<header data-section-name="home" data-hub-color="black" data-hub-scroll-down="left top" data-hub-scroll-up="left top"class="section light">
-			<div class="hub-positioner-wrapper"></div>
+			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span></span></div></div></div>
 			<div class="title"><h1>LILIAN  CHIASSAI</h1></div>
 			<div class="subtitle">Dev and more</div>		
 		</header>
 
-		<div data-section-name="experiences" data-hub-color="deeppink" data-hub-text="NOW" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="tophub" class="section medium-dark">
+		<div data-section-name="experiences" data-hub-color="#f25278" data-hub-text="NOW" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="tophub" class="section medium-dark">
 			<div class="line vertical"></div>
 			<div class="section-container row-1">
 				<div class="row">
@@ -84,37 +86,49 @@
 								
 								<div class="left-wrapper">
 									<h3>KLEEGROUP</h3>
-									<div class="date">Janvier 2015</div>
-									
 								</div>
-								<div class="right-wrapper">
+								<div class="right-wrapper activable">
 									<div class="">
 										<h3 class="">Project Leader</h3>
 										<div class="date">December 2015</div>
-										<p class="excerpt">Intégration de sites internet responsive sous Drupal 7 et Drupal 8 (HTML5 / CSS3 / Bootstrap / Twig / jQuery)<br>Maintenance des sites internet développés sous D7 et D8</p>
+										<p class="excerpt">Manage KERING's multi-brands and international intranet project<br>
+										Mission details:<br>
+										- monitor project life (quotations, new features, quality, tests, planning, ...)<br>
+										- develop client relationship<br>
+										- manage team of 3
+										</p>
+										<p class="skills">#KANBAN #AGILE #TEAMMANAGEMENT #QUOTATIONS #DeploymentPlan #ENGLISH</p>
 									</div>
 								</div>
-								<div class="left-wrapper">
+							</div>
+							<div class="timeline-item">
+								<div class="left-wrapper activable">
 									<div class="">
 										<h3 class="">WEB Developper</h3>
-										<p class="excerpt">Intégration de sites internet responsive sous Drupal 7 et Drupal 8 (HTML5 / CSS3 / Bootstrap / Twig / jQuery)<br>Maintenance des sites internet développés sous D7 et D8</p>
+										<div class="date">January 2015</div>
+										<p class="excerpt">Front-end integration of Jalios JPlatform web apps</p>
+										<p class="skills">#HTML5 #CSS3 #boostrap #jQuery #less #gulp #</p>
 									</div>
 								</div>
-								<div class="right-wrapper">
+								<div class="right-wrapper activable">
 									<div class="">
 										<h3 class="">JAVA JEE Developper</h3>
-										<p class="excerpt">Intégration de sites internet responsive sous Drupal 7 et Drupal 8 (HTML5 / CSS3 / Bootstrap / Twig / jQuery)<br>Maintenance des sites internet développés sous D7 et D8</p>
+										<div class="date">January 2015</div>
+										<p class="excerpt">Back-end dev and maintenance of Jalios JPlatform web apps</p>
+										<p class="skills">#JAVA8 #SPRING #JAXB #JALIOS #HIBERNATE #POSTGRESQL</p>
 									</div>
 								</div>
-								
-								
 							</div>
 							<div class="timeline-item">
 								<div class="bullet"></div>
-								<div class="left-wrapper">
-									<h3 class="">Internship</h3>
-									<div class="date">Février 2017 - Mai 2018</div>
-									<p class="excerpt">6-month internship at Orange Labs R&D. Missions : to analyze and conceive new business models, to provide support to internal projects, to translate business requirements into technical features</p>
+								<div class="left-wrapper activable">
+									<h3 class="">Internship - Business Models R&D</h3>
+									<div class="date">June 2013 - December 2013</div>
+									<p class="excerpt">Use game theory and economics to quantify existing or develop new business models in the telecom environment<br>
+									Mission details:<br>
+									- analyze and conceive new business models<br>
+									- translate business requirements into technical features</p>
+									<p class="skills">#Economics #GameTheory #BusinessModels #Strategy #IoT #SmartCities</p>
 								</div>
 								<div class="right-wrapper">
 									<h3>ORANGE</h3>
@@ -122,10 +136,16 @@
 							</div>
 							<div class="timeline-item">
 								<div class="bullet"></div>
-								<div class="left-wrapper">
-									<h3 class="">Project Leader</h3>
-									<div class="date">Février 2017 - Mai 2018</div>
-									<p class="excerpt">Intégration de sites internet responsive sous Drupal 7 et Drupal 8 (HTML5 / CSS3 / Bootstrap / Twig / jQuery)<br>Maintenance des sites internet développés sous D7 et D8<br>Utilisation de Sass, Less, Git, Gulp, Docker, gestionnaire de suivi de projet (Mantis, Jira)</p>
+								<div class="left-wrapper activable">
+									<h3 class="">Internship - Web App Proof of Concept</h3>
+									<div class="date">June 2017 - August 2018</div>
+									<p class="excerpt">Realization of a web app providing in real time audit of music videos<br>
+									Mission details:<br>
+									- webapp design and development<br>
+									- database conception<br>
+									- process data from multiple webservices
+									</p>
+									<p class="skills">#PHP #CHART.JS #SQL #MySQL #SOAP</p>
 								</div>
 								<div class="right-wrapper">
 									<h3>TRANSPARENCY RIGHTS MANAGEMENT</h3>
@@ -135,157 +155,202 @@
 					</div>
 				</div>
 			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"></div></div>
+			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Hello</span><span>Should I introduce myself ?</span></div></div></div>
 		</div>
 
-		<div data-section-name="skills" data-hub-color="orangered" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="top left" data-hub-text-css='[{"color" : "white"}]' class="section light">
+		<div data-section-name="skills" data-hub-color="#f3c130" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="top left" data-hub-text-css='[{"color" : "white"}]' class="section light">
 			
 			<!-- <div class="wrapper small half bottom right medium-dark"><h1>SKILLS</h1></div> -->
 			<div class="section-container row-2">
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="row subsection">
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/html5&css3.png"/>
+					
+						<div class="project-slider-wrapper">
+							<div class="project-slider">
+								<div class="project-wrapper activable">
+									<img src="images/HTMLCSS.png">
+									<div class="expand">
+										<div>
+										</div>
 									</div>
-									<div class="col-xs-12">
+									</img>
+									<div class="overlay">
+										<h3 class="project-title">HTML & CSS</h3>
 										<ul class="skill-list">
-											<li>HTML5 & CSS3</li>
-											<li>Bootstrap</li>
-											<li>Less</li>
-											<li>Gulp</li>
+											<li><span>HTML5 & CSS3</span></li>
+											<li><span>Bootstrap</span></li>
+											<li><span>Less</span></li>
+											
+										</ul>
+									</div>
+									
+								</div>
+								<div class="project-wrapper activable">
+									<img src="images/JS.png"/>
+									<div class="expand">
+										<div>
+										</div>
+									</div>
+									<div class="overlay">
+										<h3 class="project-title">Javascript</h3>
+										<ul class="skill-list">
+											<li><span>Jquery</span></li>
+											<li><span>React</span></li>
+											<li><span>Gulp</span></li>
 										</ul>
 									</div>
 								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/javascript.png"/>
+								<div class="project-wrapper activable">
+									<img src="images/CMSnew.png"/>
+									<div class="expand">
+										<div>
+										</div>
 									</div>
-									<div class="col-xs-12">
+									<div class="overlay">
+										<h3 class="project-title">CMS</h3>
 										<ul class="skill-list">
-											<li>Javascript</li>
-											<li>Jquery</li>
-											<li>React</li>
-											<li>Node.js</li>
+											<li><span>Jalios - JPlatform</span></li>
+											<li><span>Wordpress / PHP</span></li>
 										</ul>
 									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/cms.png"/>
-									</div>
-									<div class="col-xs-12">
-										<ul class="skill-list">
-											<li>CMS</li>
-											<li>Jalios - JPlatform</li>
-											<li>Wordpress / PHP</li>
-											<li></li>
-										</ul>
-									</div>
+									
 								</div>
 							</div>
 						</div>
+						
 					</div>
 					<div class="col-xs-6">
-					<div class="row subsection">
-							<div class="col-xs-12 col-sm-6">
-								<div class="row">
-									<div class="col-xs-12 col-sm-4">
-										<img src="images/java.png"/>
+					
+						<div class="project-slider-wrapper">
+								<div class="project-slider left-align">
+									<div class="project-wrapper activable">
+										<img src="images/javafinal.png">
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										</img>
+										<div class="overlay">
+											<h3 class="project-title">Java</h3>
+											<ul class="skill-list">
+												<li><span>Spring</span></li>
+												<li><span>Hibernate</span></li>
+												<li><span>Jaxb</span></li>
+												<li><span>Apache Tomcat</span></li>
+											</ul>
+										</div>
+										
 									</div>
-									<div class="hidden-xs col-sm-8">
-										<ul class="skill-list">
-											<li>Team management</li>
-											<li>Budget management</li>
-											<li>Project management</li>
-										</ul>
+									<div class="project-wrapper activable">
+										<img src="images/database.png"/>
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										<div class="overlay">
+											<h3 class="project-title">Database</h3>
+											<ul class="skill-list">
+												<li><span>SQL</span></li>
+												<li><span>MySQL</span></li>
+												<li><span>PostgreSQL</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="project-wrapper activable">
+										<img src="images/DevTools.png"/>
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										<div class="overlay">
+											<h3 class="project-title">Dev Tools</h3>
+											<ul class="skill-list">
+												<li><span>Mantis</span></li>
+												<li><span>SVN/GIT</span></li>
+												<li><span>Eclipse</span></li>
+												<li><span>Visual Studio</span></li>
+											</ul>
+										</div>
+										
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="row">
-									<div class="col-xs-12 col-sm-4">
-										<img src="images/bdd.png"/>
-									</div>
-									<div class="hidden-xs col-sm-8">
-										<ul class="skill-list">
-											<li>Suite Office</li>
-											<li>Kanban</li>
-											<li>Scrum/agile methodology</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
+				</div>
+				<div class="relative-hub-positioner">
+					<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>I like to do stuff</span><span>Usualy, it implies gaming</span><span>Or coding</span></div></div></div>
 				</div>
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="row subsection">
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/java.png"/>
+						<div class="project-slider-wrapper">
+							<div class="project-slider">
+								<div class="project-wrapper activable">
+									<img src="images/en.png">
+									<div class="expand">
+										<div>
+										</div>
 									</div>
-									<div class="col-xs-12">
+									</img>
+									<div class="overlay">
+										<h3 class="project-title">English</h3>
 										<ul class="skill-list">
-											<li>Java</li>
-											<li>Spring</li>
-											<li>Hibernate</li>
-											<li>Jaxb</li>
-											<li>Apache Tomcat</li>
+											<li><span>Fluent</span></li>
+											<li><span>University of Cambridge IELTS - 7.0</span></li>
+										</ul>
+									</div>
+									
+								</div>
+								<div class="project-wrapper activable">
+									<img src="images/fr.png"/>
+									<div class="expand">
+										<div>
+										</div>
+									</div>
+									<div class="overlay">
+										<h3 class="project-title">French</h3>
+										<ul class="skill-list">
+											<li><span>Native speaker</span></li>
 										</ul>
 									</div>
 								</div>
+
 							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/bdd.png"/>
+						</div>
+						
+					</div>
+					<div class="col-xs-6 col-section-title">
+						<div class="project-slider-wrapper">
+							<div class="project-slider left-align">
+								<div class="project-wrapper activable">
+									<img src="images/kanban.png"/>
+									<div class="expand">
+										<div>
+										</div>
 									</div>
-									<div class="col-xs-12">
+									</img>
+									<div class="overlay">
+										<h3 class="project-title">Management</h3>
 										<ul class="skill-list">
-											<li>Database</li>
-											<li>SQL language</li>
-											<li>MySQL</li>
-											<li>PostgreSQL</li>
+											<li><span>Project management</span></li>
+											<li><span>Agile methodology</span></li>
+											<li><span>Kanban</span></li>
+											<li><span>Suite Office</span></li>
 										</ul>
 									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="row">
-									<div class="col-xs-12">
-										<img src="images/tools.png"/>
-									</div>
-									<div class="col-xs-12">
-										<ul class="skill-list">
-											<li>Tools</li>
-											<li>Mantis</li>
-											<li>SVN/GIT</li>
-											<li>Eclipse</li>
-											<li>Visual Studio</li>
-										</ul>
-									</div>
+									
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-6 col-section-title">LANGUAGES</div>
 					<div class="col-sm-2 section-title"><h1>SKILLS</h1></div>
 				</div>
-				<div class="hub-positioner-wrapper"><div class="hub-positioner"></div></div>
+				
+				
 			</div>
-			
+			<div class="line horizontal-vertical"></div>
 		</div>
 		
-		<div data-section-name="education" data-hub-color="purple" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="righthub" class="section medium-dark row-2">
+		<div data-section-name="education" data-hub-color="#663b94" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="righthub" class="section medium-dark row-2">
 			<div class="line horizontal-vertical"></div>
 			
 			
@@ -317,10 +382,10 @@
 								<div class="right-wrapper">
 									<h3 class="">Master’s degree in Information and Systems</h3>
 									<div class="date">2010 - 2014</div>
-									<p class="excerpt">Coursework in: Database, Semantics, SI, Security, Modeling, Integration, Video Games</p>
+									<p class="excerpt">Main subjects: Database, Semantics, SI, Security, Modeling, Integration, Video Games</p>
 								</div>
 							</div>
-							<div class="col-xs-12  col-md-3 timeline-item">
+							<div class="col-xs-12  col-md-5 timeline-item">
 								<div class="bullet"></div>
 								<div class="left-wrapper">
 									<h2>Preparatory classes for engineering school</h2>
@@ -328,19 +393,7 @@
 								<div class="right-wrapper">
 									<h3 class="">Mathematics & Phsyics</h3>
 									<div class="date">2008 - 2010</div>
-									<p class="excerpt">Coursework in: Mathematics, Physics, Algorithmic</p>
-								</div>
-								
-							</div>
-							<div class="col-xs-12 col-md-2 timeline-item">
-								<div class="bullet"></div>
-								<div class="left-wrapper">
-									<h2>BAC</h2>
-								</div>
-								<div class="right-wrapper">
-									<h3 class="">Specialité : mathématiques</h3>
-									<div class="date">2008</div>
-									<p class="excerpt">Mention très bien</p>
+									<p class="excerpt">Main subjects: Mathematics, Physics, Algorithmic</p>
 								</div>
 								
 							</div>
@@ -351,42 +404,139 @@
 					</div>
 				</div>
 			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"></div></div>
+			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Sometime both</span><span>Getting lost on StackOverflow is fun too</span></div></div></div>
 		</div>
 		
-		<div data-section-name="achievements" data-hub-color="orange" data-hub-text="My black and white text here" data-hub-scroll-down="top left" data-hub-scroll-up="left top" class="section dark row-2">
+		<div data-section-name="achievements" data-hub-color="#63B4D1" data-hub-text="My black and white text here" data-hub-scroll-down="top left" data-hub-scroll-up="left top" class="section dark row-2">
 			
-			<div class="section-container row-2">
-				
+			<div class="section-container">
 				<div class="row">
-					<div class="col-xs-6">
-					
+					<div class="col-xs-6  col-sm-6 col-md-12">
+						<div class="row">
+							<div class="col-xs-12 col-section-title">
+								<div class="project-slider-wrapper">
+									<div class="project-slider">
+										<div class="project-wrapper activable">
+											<img src="images/gravity.png"/>
+											<div class="expand">
+												<div>
+												</div>
+											</div>
+											<div class="overlay">
+												<h3 class="project-title">Gravity Run</h3>
+												<div class="date">2018 - Dev in progress</div>
+												<p class="project-desc">A platformer built in which your character has power on the gravity ! </p>
+												<p class="project-link"><a href="https://github.com/AllirionX/gravity">Github repository</a></p>
+												<p class="project-skills">#videogame #gamedesign #unity</p>
+											</div>
+											
+										</div>
+										
+										<div class="project-wrapper activable">
+											<img src="images/pandemic.jpg"/>
+											<div class="expand">
+												<div>
+												</div>
+											</div>
+											<div class="overlay">
+												<h3 class="project-title">Pandemic AI</h3>
+												<div class="date">2018 - Dev in progress</div>
+												<p class="project-desc">An AI that uses a Monte Carlo Tree Search - and in the future a self reinforcing neural network - to beat the board game Pandemic (assymetric, non-zero-sum, imperfect information, non-deterministic...). </p>
+												<p class="project-link"><a href="https://github.com/AllirionX/pandemic-ai">Github repository</a></p>
+												<p class="project-skills">#java #algorithm #MCTS #neuralnetwork</p>
+											</div>
+											
+										</div>
+										
+										<div class="project-wrapper activable">
+											<img src="images/website.png">
+											<div class="expand">
+												<div>
+												</div>
+											</div>
+											</img>
+											<div class="overlay">
+												<h3 class="project-title">Personnal Website</h3>
+												<div class="date">2018</div>
+												<p class="project-desc">Looks familiar ? That's my new responsive website !</p>
+												<p class="project-link"><a href="https://github.com/AllirionX/online-CV">Github repository</a></p>
+												<p class="project-skills">#game #gamedesign #projectmanagement</p>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2 section-title">
+								<h1>PROJECTS</h1>
+							</div>
+						</div>
 					</div>
-					<div class="col-xs-6 col-section-title">
-					
+					<div class="col-xs-6 col-sm-6 col-md-12">
+						<div class="row">
+							<div class="col-sm-2 section-title">
+								<h1>ACHIEVEMENTS</h1>
+							</div>
+							<div class="col-xs-12 col-section-title">
+							<div class="project-slider-wrapper">
+								<div class="project-slider left-align">
+									<div class="project-wrapper activable">
+										<img src="images/ZSN.png"/>
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										<div class="overlay">
+											<h3 class="project-title">AAES</h3>
+											<div class="date">2014</div>
+											<p class="project-desc">I co-founded a non profit organization that gathers hundred of players for live role playing nights once or twice a year. I also built its website.</p>
+											<p class="project-link"><a href="https://asso-aaes.fr/">Learn more</a></p>
+											<p class="project-link"><a href="https://github.com/AllirionX/aaes">Github repository</a></p>
+											<p class="project-skills">#event #web #projectmanagement</p>
+										</div>
+									</div>
+									<div class="project-wrapper activable">
+										<img src="images/Final_Cover_Omega_Fighters.png"/>
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										<div class="overlay">
+											<h3 class="project-title">Omega Fighters 3000</h3>
+											<div class="date">2017</div>
+											<p class="project-desc">An exciting board game in which each team controls its own mecha and try to defeat the opponent team ! It reached the final of one of the most renowned french game prototyping competition.</p>
+											<p class="project-link"><a href="http://centreludique-bb.fr/creagames-2017-et-remise-des-prix-du-37e-concours-de-boulogne-billancourt/non-categorise/creagames-2017">Learn more</a></p>
+											<p class="project-skills">#game #gamedesign #projectmanagement</p>
+										</div>
+									</div>
+									<div class="project-wrapper activable">
+										<img src="images/gunpowder.png"/>
+										<div class="expand">
+											<div>
+											</div>
+										</div>
+										<div class="overlay">
+											<h3 class="project-title">Gunpowder</h3>
+											<div class="date">2016</div>
+											<p class="project-desc">A new spanish rock band needed my wordpress skills for a customizable website!</p>
+											<p class="project-link"><a href="http://www.gunpowder-rock.com"/>Learn more</a></p>
+											<p class="project-skills">#web #wordpress #php</p>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-2 section-title">
-						<h1>PROJECTS</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-2 section-title">
-						<h1>ACHIEVEMENTS</h1>
-					</div>
-					<div class="col-xs-6 col-section-title">
-					
-					</div>
-					<div class="col-xs-6">
-					
-					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"></div></div>
+			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Quick, scroll !</span><span>Too late</span><span>You will hear about my super-interesting projects</span><span>For a very loooong time</span></div></div></div>
 		</div>
 
 		<footer data-section-name="contact" data-hub-color="lightgreen" data-hub-text="My footer text here" data-hub-scroll-down="left top" data-hub-scroll-up="top left" class="section medium">
 			<div class="line vertical half top left small-xs"></div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"></div></div>
+			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>28 years old</span><span>French</span><span>Well... that's me !</span></div></div></div>
 			<h1>CONTACT</h1>
 			
 			<div class="section-container row-1">
@@ -394,7 +544,14 @@
 					<div class="col-sm-2 section-title">
 					</div>
 					<div class="col-xs-12 col-section-title">
-					
+						<ul>
+							<li><div class="img-wrapper"><a href="mailto:lilian.chiassai@gmail.com"><img src="images/mail.png"></a></div><span><a href="mailto:lilian.chiassai@gmail.com">lilian.chiassai@gmail.com</a></span></li>
+							<li><div class="img-wrapper"><a href="tel:+33-73556543"><img src="images/phone.png"></a></div><span><a href="tel:+33-73556543">(+33) 06 73 55 65 43</a></span></li>
+							<li><div class="img-wrapper"><img src="images/location.png"></div><span>10 Impasse de la Madeleine 14000 Caen France</span></li>
+							<li><div class="img-wrapper"><a href="https://www.linkedin.com/in/lilian-chiassai-60a9a6a2/"><img src="images/in.png"></a></div><span>&nbsp;</span></li>
+							<li><div class="img-wrapper"><a href="https://github.com/AllirionX"><img src="images/github.png"></a></div><span>&nbsp;</span></li>
+							<li><div class="img-wrapper"><a href="https://stackoverflow.com/users/10631518/allirionx"><img src="images/stack.png"></a></div><span>&nbsp;</span></li>
+						</ul>
 					</div>	
 				</div>
 			</div>
