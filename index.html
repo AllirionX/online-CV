@@ -11,8 +11,7 @@
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 		<link href="css/style.css" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,400,900" rel="stylesheet">
 	</head>
@@ -21,8 +20,6 @@
 			<div class="logo"></div>
 			<div class="inside"></div>
 		</div>
-		<div id="hub"></div>
-	
 		<nav class="menu fixed">
 			<div class="container">
 				
@@ -67,170 +64,222 @@
 					</ul>
 			</div>
 		</nav>
-		
-		<header data-section-name="home" data-hub-color="black" data-hub-scroll-down="left top" data-hub-scroll-up="left top"class="section light">
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span></span></div></div></div>
-			<div class="title"><h1>LILIAN  CHIASSAI</h1></div>
-			<div class="subtitle">Dev and more</div>		
-		</header>
+		<div id="fullpage">
+			<header data-anchor="home" class="section light">
+				<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
+				<div class="title"><h1>LILIAN  CHIASSAI</h1></div>
+				<div class="subtitle">Dev and more</div>		
+			</header>
 
-		<div data-section-name="experiences" data-hub-color="#f25278" data-hub-text="NOW" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="tophub" class="section medium-dark">
-			<div class="line vertical"></div>
-			<div class="section-container row-1">
-				<div class="row">
-					<div class="col-xs-12">
-					<h1>EXPERIENCES</h1>
-					<div class="timeline container subsection row">
-						
-							<div class="timeline-item">
-								
-								<div class="left-wrapper">
-									<h3>KLEEGROUP</h3>
-								</div>
-								<div class="right-wrapper activable">
-									<div class="">
-										<h3 class="">Project Leader</h3>
-										<div class="date">December 2015</div>
-										<p class="excerpt">Manage KERING's multi-brands and international intranet project<br>
-										Mission details:<br>
-										- monitor project life (quotations, new features, quality, tests, planning, ...)<br>
-										- develop client relationship<br>
-										- manage team of 3
-										</p>
-										<p class="skills">#KANBAN #AGILE #TEAMMANAGEMENT #QUOTATIONS #DeploymentPlan #ENGLISH</p>
+			<div data-anchor="experiences" class="section medium-dark">
+				<div class="line vertical"></div>
+				<div class="section-container row-1">
+					<div class="row">
+						<div class="col-xs-12">
+						<h1>EXPERIENCES</h1>
+						<div class="timeline container subsection row">
+							
+								<div class="timeline-item">
+									
+									<div class="left-wrapper">
+										<h2>KLEEGROUP</h2>
+									</div>
+									<div class="right-wrapper">
+										<a data-toggle="collapse" href="#experience-0" role="button" aria-expanded="false">
+											<div>
+											<h3 class="">Project Leader</h3>
+											<div class="date">December 2015</div>
+											</div>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="experience-0">
+											<p class="excerpt"Manage KERING's multi-brands and international intranet project<br>
+											Mission details:<br>
+											- monitor project life (quotations, new features, quality, tests, planning, ...)<br>
+											- develop client relationship<br>
+											- manage team of 3
+											</p>
+											<p class="skills">#KANBAN #AGILE #TEAMMANAGEMENT #QUOTATIONS #DeploymentPlan #ENGLISH</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="left-wrapper activable">
-									<div class="">
-										<h3 class="">WEB Developper</h3>
-										<div class="date">January 2015</div>
-										<p class="excerpt">Front-end integration of Jalios JPlatform web apps</p>
-										<p class="skills">#HTML5 #CSS3 #boostrap #jQuery #less #gulp #</p>
+								<div class="timeline-item">
+									<div class="left-wrapper">
+										<a data-toggle="collapse" href="#experience-1" role="button" aria-expanded="false">
+											<div>
+												<h3 class="">WEB Developper</h3>
+												<div class="date">January 2015</div>
+											</div>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="experience-1">
+											<p class="excerpt">Front-end integration of Jalios JPlatform web apps</p>
+											<p class="skills">#HTML5 #CSS3 #boostrap #jQuery #less #gulp</p>
+										</div>
+									</div>
+									<div class="right-wrapper">
+										<a data-toggle="collapse" href="#experience-2" role="button" aria-expanded="false">
+											<div class="">
+												<h3 class="">JAVA JEE Developper</h3>
+												<div class="date">January 2015</div>
+											</div>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="experience-2">
+											<p class="excerpt">Back-end dev and maintenance of Jalios JPlatform web apps</p>
+											<p class="skills">#JAVA8 #SPRING #JAXB #JALIOS #HIBERNATE #POSTGRESQL</p>
+										</div>
 									</div>
 								</div>
-								<div class="right-wrapper activable">
-									<div class="">
-										<h3 class="">JAVA JEE Developper</h3>
-										<div class="date">January 2015</div>
-										<p class="excerpt">Back-end dev and maintenance of Jalios JPlatform web apps</p>
-										<p class="skills">#JAVA8 #SPRING #JAXB #JALIOS #HIBERNATE #POSTGRESQL</p>
+								<div class="timeline-item">
+									<div class="bullet"></div>
+									<div class="left-wrapper">
+										
+										<a data-toggle="collapse" href="#experience-3" role="button" aria-expanded="false">
+											<div class="">
+												<h3 class="">Internship - Business Models R&D</h3>
+												<div class="date">June 2013 - December 2013</div>
+											</div>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="experience-3">
+											<p class="excerpt">Use game theory and economics to quantify existing or develop new business models in the telecom environment<br>
+											Mission details:<br>
+											- analyze and conceive new business models<br>
+											- translate business requirements into technical features</p>
+											<p class="skills">#Economics #GameTheory #BusinessModels #Strategy #IoT #SmartCities</p>
+										</div>
+									</div>
+									<div class="right-wrapper">
+										<h2>ORANGE</h2>
 									</div>
 								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="bullet"></div>
-								<div class="left-wrapper activable">
-									<h3 class="">Internship - Business Models R&D</h3>
-									<div class="date">June 2013 - December 2013</div>
-									<p class="excerpt">Use game theory and economics to quantify existing or develop new business models in the telecom environment<br>
-									Mission details:<br>
-									- analyze and conceive new business models<br>
-									- translate business requirements into technical features</p>
-									<p class="skills">#Economics #GameTheory #BusinessModels #Strategy #IoT #SmartCities</p>
-								</div>
-								<div class="right-wrapper">
-									<h3>ORANGE</h3>
-								</div>
-							</div>
-							<div class="timeline-item">
-								<div class="bullet"></div>
-								<div class="left-wrapper activable">
-									<h3 class="">Internship - Web App Proof of Concept</h3>
-									<div class="date">June 2017 - August 2018</div>
-									<p class="excerpt">Realization of a web app providing in real time audit of music videos<br>
-									Mission details:<br>
-									- webapp design and development<br>
-									- database conception<br>
-									- process data from multiple webservices
-									</p>
-									<p class="skills">#PHP #CHART.JS #SQL #MySQL #SOAP</p>
-								</div>
-								<div class="right-wrapper">
-									<h3>TRANSPARENCY RIGHTS MANAGEMENT</h3>
+								<div class="timeline-item">
+									<div class="bullet"></div>
+									<div class="left-wrapper">
+										
+										<a data-toggle="collapse" href="#experience-4" role="button" aria-expanded="false">
+											<div class="">
+												<h3 class="">Internship - Web App Proof of Concept</h3>
+												<div class="date">June 2017 - August 2018</div>
+											</div>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="experience-4">
+											<p class="excerpt">Realization of a web app providing in real time audit of music videos<br>
+											Mission details:<br>
+											- webapp design and development<br>
+											- database conception<br>
+											- process data from multiple webservices
+											</p>
+											<p class="skills">#PHP #CHART.JS #SQL #MySQL #SOAP</p>
+										</div>
+									</div>
+									<div class="right-wrapper">
+										<h2>TRANSPARENCY RIGHTS MANAGEMENT</h2>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
 			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Hello</span><span>Should I introduce myself ?</span></div></div></div>
-		</div>
 
-		<div data-section-name="skills" data-hub-color="#f3c130" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="top left" data-hub-text-css='[{"color" : "white"}]' class="section light">
-			
-			<!-- <div class="wrapper small half bottom right medium-dark"><h1>SKILLS</h1></div> -->
-			<div class="section-container row-2">
-				<div class="row">
-					<div class="col-xs-6">
-					
-						<div class="project-slider-wrapper">
-							<div class="project-slider">
-								<div class="project-wrapper activable">
-									<img src="images/HTMLCSS.png">
-									<div class="expand">
-										<div>
+			<div data-anchor="skills" class="section light">
+				
+				<!-- <div class="wrapper small half bottom right medium-dark"><h1>SKILLS</h1></div> -->
+				<div class="section-container row-2">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="project-slider-wrapper">
+								<div id="accordion-0" class="project-slider right-align" role="tablist">
+									<div class="panel project-wrapper " id="headingOne">
+										<a data-toggle="collapse" href="#skill-1" role="button" aria-expanded="false">
+											<img src="images/HTMLCSS.png">
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										
+										<div class="panel-collapse collapse" id="skill-1" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-0">
+											<h3 class="project-title">HTML & CSS</h3>
+											<ul class="skill-list">
+												<li><span>HTML5 & CSS3</span></li>
+												<li><span>Bootstrap</span></li>
+												<li><span>Less</span></li>
+											</ul>
 										</div>
 									</div>
-									</img>
-									<div class="overlay">
-										<h3 class="project-title">HTML & CSS</h3>
-										<ul class="skill-list">
-											<li><span>HTML5 & CSS3</span></li>
-											<li><span>Bootstrap</span></li>
-											<li><span>Less</span></li>
-											
-										</ul>
-									</div>
-									
-								</div>
-								<div class="project-wrapper activable">
-									<img src="images/JS.png"/>
-									<div class="expand">
-										<div>
+									<div class="panel project-wrapper " id="headingTwo">
+										<a data-toggle="collapse" href="#skill-2" role="button" aria-expanded="false" data-parent="#accordion-0">
+											<img src="images/JS.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										
+										<div class="panel-collapse collapse" id="skill-2" role="tabpanel" aria-labelledby="headingTwo">
+											<h3 class="project-title">Javascript</h3>
+											<ul class="skill-list">
+												<li><span>Jquery</span></li>
+												<li><span>React</span></li>
+												<li><span>Gulp</span></li>
+											</ul>
 										</div>
 									</div>
-									<div class="overlay">
-										<h3 class="project-title">Javascript</h3>
-										<ul class="skill-list">
-											<li><span>Jquery</span></li>
-											<li><span>React</span></li>
-											<li><span>Gulp</span></li>
-										</ul>
-									</div>
-								</div>
-								<div class="project-wrapper activable">
-									<img src="images/CMSnew.png"/>
-									<div class="expand">
-										<div>
+									<div class="panel project-wrapper " id="headingThree">
+										<a data-toggle="collapse" href="#skill-3" role="button" aria-expanded="false" data-parent="#accordion-0">
+											<img src="images/CMSnew.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										
+										
+										<div class="panel-collapse collapse" id="skill-3" role="tabpanel" aria-labelledby="headingThree" >
+											<h3 class="project-title">CMS</h3>
+											<ul class="skill-list">
+												<li><span>Jalios - JPlatform</span></li>
+												<li><span>Wordpress / PHP</span></li>
+											</ul>
 										</div>
+										
 									</div>
-									<div class="overlay">
-										<h3 class="project-title">CMS</h3>
-										<ul class="skill-list">
-											<li><span>Jalios - JPlatform</span></li>
-											<li><span>Wordpress / PHP</span></li>
-										</ul>
-									</div>
-									
 								</div>
 							</div>
 						</div>
-						
-					</div>
-					<div class="col-xs-6">
-					
-						<div class="project-slider-wrapper">
-								<div class="project-slider left-align">
-									<div class="project-wrapper activable">
-										<img src="images/javafinal.png">
-										<div class="expand">
-											<div>
+						<div class="col-xs-6">							
+							<div class="project-slider-wrapper">
+								<div id="accordion-1" class="project-slider left-align" role="tablist">
+									<div class="panel project-wrapper " id="headingOne">
+										<a data-toggle="collapse" href="#skill-4" role="button" aria-expanded="false">
+											<img src="images/javafinal.png">
+											<div class="expand">
+												<span></span>
+												<span></span>
 											</div>
-										</div>
-										</img>
-										<div class="overlay">
+										</a>
+										
+										<div class="panel-collapse collapse" id="skill-4" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-1">
 											<h3 class="project-title">Java</h3>
 											<ul class="skill-list">
 												<li><span>Spring</span></li>
@@ -239,15 +288,17 @@
 												<li><span>Apache Tomcat</span></li>
 											</ul>
 										</div>
-										
 									</div>
-									<div class="project-wrapper activable">
-										<img src="images/database.png"/>
-										<div class="expand">
-											<div>
+									<div class="panel project-wrapper " id="headingTwo">
+										<a data-toggle="collapse" href="#skill-5" role="button" aria-expanded="false" data-parent="#accordion-1">
+											<img src="images/database.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
 											</div>
-										</div>
-										<div class="overlay">
+										</a>
+										
+										<div class="panel-collapse collapse" id="skill-5" role="tabpanel" aria-labelledby="headingTwo">
 											<h3 class="project-title">Database</h3>
 											<ul class="skill-list">
 												<li><span>SQL</span></li>
@@ -256,13 +307,17 @@
 											</ul>
 										</div>
 									</div>
-									<div class="project-wrapper activable">
-										<img src="images/DevTools.png"/>
-										<div class="expand">
-											<div>
+									<div class="panel project-wrapper " id="headingThree">
+										<a data-toggle="collapse" href="#skill-6" role="button" aria-expanded="false" data-parent="#accordion-1">
+											<img src="images/DevTools.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
 											</div>
-										</div>
-										<div class="overlay">
+										</a>
+										
+										
+										<div class="panel-collapse collapse" id="skill-6" role="tabpanel" aria-labelledby="headingThree" >
 											<h3 class="project-title">Dev Tools</h3>
 											<ul class="skill-list">
 												<li><span>Mantis</span></li>
@@ -275,296 +330,315 @@
 									</div>
 								</div>
 							</div>
-					</div>
-				</div>
-				<div class="relative-hub-positioner">
-					<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>I like to do stuff</span><span>Usualy, it implies gaming</span><span>Or coding</span></div></div></div>
-				</div>
-				<div class="row">
-					<div class="col-xs-6">
-						<div class="project-slider-wrapper">
-							<div class="project-slider">
-								<div class="project-wrapper activable">
-									<img src="images/en.png">
-									<div class="expand">
-										<div>
-										</div>
-									</div>
-									</img>
-									<div class="overlay">
-										<h3 class="project-title">English</h3>
-										<ul class="skill-list">
-											<li><span>Fluent</span></li>
-											<li><span>University of Cambridge IELTS - 7.0</span></li>
-										</ul>
-									</div>
-									
-								</div>
-								<div class="project-wrapper activable">
-									<img src="images/fr.png"/>
-									<div class="expand">
-										<div>
-										</div>
-									</div>
-									<div class="overlay">
-										<h3 class="project-title">French</h3>
-										<ul class="skill-list">
-											<li><span>Native speaker</span></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-xs-6 col-section-title">
-						<div class="project-slider-wrapper">
-							<div class="project-slider left-align">
-								<div class="project-wrapper activable">
-									<img src="images/kanban.png"/>
-									<div class="expand">
-										<div>
-										</div>
-									</div>
-									</img>
-									<div class="overlay">
-										<h3 class="project-title">Management</h3>
-										<ul class="skill-list">
-											<li><span>Project management</span></li>
-											<li><span>Agile methodology</span></li>
-											<li><span>Kanban</span></li>
-											<li><span>Suite Office</span></li>
-										</ul>
-									</div>
-									
-								</div>
-							</div>
 						</div>
 					</div>
-					<div class="col-sm-2 section-title"><h1>SKILLS</h1></div>
-				</div>
-				
-				
-			</div>
-			<div class="line horizontal-vertical"></div>
-		</div>
-		
-		<div data-section-name="education" data-hub-color="#663b94" data-hub-text="My black and white text here" data-hub-scroll-down="left top" data-hub-scroll-up="left top" data-hub-class="righthub" class="section medium-dark row-2">
-			<div class="line horizontal-vertical"></div>
-			
-			
-			<div class="section-container row-1">
-				<div class="row">
-					<div class="col-xs-12 col-section-title">
-						<div class="timeline horizontal row subsection">
-							<div class="col-xs-12 col-md-3 timeline-item">
-								
-								<div class="left-wrapper">
-									<h2>KLEEGROUP</h2>
-								</div>
-								<div class="right-wrapper">
-									<h3 class="">Advanced Javascript</h3>
-									<div class="date">2 days - 2017</div>
-									<h3 class="">Project Manager</h3>
-									<div class="date">5 days - 2016</div>
-									<h3 class="">Jalios Developper Diploma</h3>
-									<div class="date">2017</div>
-								</div>
-								<div class="bullet"></div>
-							</div>
-							
-							<div class="col-xs-12  col-md-4 timeline-item">
-								<div class="bullet"></div>
-								<div class="left-wrapper">
-									<h2>Nancy School of Engineering</h2>
-								</div>
-								<div class="right-wrapper">
-									<h3 class="">Master’s degree in Information and Systems</h3>
-									<div class="date">2010 - 2014</div>
-									<p class="excerpt">Main subjects: Database, Semantics, SI, Security, Modeling, Integration, Video Games</p>
-								</div>
-							</div>
-							<div class="col-xs-12  col-md-5 timeline-item">
-								<div class="bullet"></div>
-								<div class="left-wrapper">
-									<h2>Preparatory classes for engineering school</h2>
-								</div>
-								<div class="right-wrapper">
-									<h3 class="">Mathematics & Phsyics</h3>
-									<div class="date">2008 - 2010</div>
-									<p class="excerpt">Main subjects: Mathematics, Physics, Algorithmic</p>
-								</div>
-								
-							</div>
-						</div>
+					<div class="relative-hub-positioner">
+						<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
 					</div>
-					<div class="col-sm-2 section-title">
-						<h1>EDUCATION</h1>
-					</div>
-				</div>
-			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Sometime both</span><span>Getting lost on StackOverflow is fun too</span></div></div></div>
-		</div>
-		
-		<div data-section-name="achievements" data-hub-color="#63B4D1" data-hub-text="My black and white text here" data-hub-scroll-down="top left" data-hub-scroll-up="left top" class="section dark row-2">
-			
-			<div class="section-container">
-				<div class="row">
-					<div class="col-xs-6  col-sm-6 col-md-12">
-						<div class="row">
-							<div class="col-xs-12 col-section-title">
-								<div class="project-slider-wrapper">
-									<div class="project-slider">
-										<div class="project-wrapper activable">
-											<img src="images/gravity.png"/>
-											<div class="expand">
-												<div>
-												</div>
-											</div>
-											<div class="overlay">
-												<h3 class="project-title">Gravity Run</h3>
-												<div class="date">2018 - Dev in progress</div>
-												<p class="project-desc">A platformer built in which your character has power on the gravity ! </p>
-												<p class="project-link"><a href="https://github.com/AllirionX/gravity">Github repository</a></p>
-												<p class="project-skills">#videogame #gamedesign #unity</p>
-											</div>
-											
-										</div>
-										
-										<div class="project-wrapper activable">
-											<img src="images/pandemic.jpg"/>
-											<div class="expand">
-												<div>
-												</div>
-											</div>
-											<div class="overlay">
-												<h3 class="project-title">Pandemic AI</h3>
-												<div class="date">2018 - Dev in progress</div>
-												<p class="project-desc">An AI that uses a Monte Carlo Tree Search - and in the future a self reinforcing neural network - to beat the board game Pandemic (assymetric, non-zero-sum, imperfect information, non-deterministic...). </p>
-												<p class="project-link"><a href="https://github.com/AllirionX/pandemic-ai">Github repository</a></p>
-												<p class="project-skills">#java #algorithm #MCTS #neuralnetwork</p>
-											</div>
-											
-										</div>
-										
-										<div class="project-wrapper activable">
-											<img src="images/website.png">
-											<div class="expand">
-												<div>
-												</div>
-											</div>
-											</img>
-											<div class="overlay">
-												<h3 class="project-title">Personnal Website</h3>
-												<div class="date">2018</div>
-												<p class="project-desc">Looks familiar ? That's my new responsive website !</p>
-												<p class="project-link"><a href="https://github.com/AllirionX/online-CV">Github repository</a></p>
-												<p class="project-skills">#game #gamedesign #projectmanagement</p>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-2 section-title">
-								<h1>PROJECTS</h1>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-12">
-						<div class="row">
-							<div class="col-sm-2 section-title">
-								<h1>ACHIEVEMENTS</h1>
-							</div>
-							<div class="col-xs-12 col-section-title">
+					<div class="row">
+						<div class="col-xs-6">
 							<div class="project-slider-wrapper">
-								<div class="project-slider left-align">
-									<div class="project-wrapper activable">
-										<img src="images/ZSN.png"/>
-										<div class="expand">
-											<div>
+								<div id="accordion-2" class="project-slider right-align" role="tablist">
+									<div class="panel project-wrapper " id="headingOne">
+										<a data-toggle="collapse" href="#skill-7" role="button" aria-expanded="false">
+											<img src="images/en.png">
+											<div class="expand">
+												<span></span>
+												<span></span>
 											</div>
-										</div>
-										<div class="overlay">
-											<h3 class="project-title">AAES</h3>
-											<div class="date">2014</div>
-											<p class="project-desc">I co-founded a non profit organization that gathers hundred of players for live role playing nights once or twice a year. I also built its website.</p>
-											<p class="project-link"><a href="https://asso-aaes.fr/">Learn more</a></p>
-											<p class="project-link"><a href="https://github.com/AllirionX/aaes">Github repository</a></p>
-											<p class="project-skills">#event #web #projectmanagement</p>
-										</div>
-									</div>
-									<div class="project-wrapper activable">
-										<img src="images/Final_Cover_Omega_Fighters.png"/>
-										<div class="expand">
-											<div>
-											</div>
-										</div>
-										<div class="overlay">
-											<h3 class="project-title">Omega Fighters 3000</h3>
-											<div class="date">2017</div>
-											<p class="project-desc">An exciting board game in which each team controls its own mecha and try to defeat the opponent team ! It reached the final of one of the most renowned french game prototyping competition.</p>
-											<p class="project-link"><a href="http://centreludique-bb.fr/creagames-2017-et-remise-des-prix-du-37e-concours-de-boulogne-billancourt/non-categorise/creagames-2017">Learn more</a></p>
-											<p class="project-skills">#game #gamedesign #projectmanagement</p>
-										</div>
-									</div>
-									<div class="project-wrapper activable">
-										<img src="images/gunpowder.png"/>
-										<div class="expand">
-											<div>
-											</div>
-										</div>
-										<div class="overlay">
-											<h3 class="project-title">Gunpowder</h3>
-											<div class="date">2016</div>
-											<p class="project-desc">A new spanish rock band needed my wordpress skills for a customizable website!</p>
-											<p class="project-link"><a href="http://www.gunpowder-rock.com"/>Learn more</a></p>
-											<p class="project-skills">#web #wordpress #php</p>
-										</div>
+										</a>
 										
+										<div class="panel-collapse collapse" id="skill-7" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-2">
+											<h3 class="project-title">English</h3>
+											<ul class="skill-list">
+												<li><span>Fluent</span></li>
+												<li><span>University of Cambridge IELTS - 7.0</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel project-wrapper " id="headingTwo">
+										<a data-toggle="collapse" href="#skill-8" role="button" aria-expanded="false" data-parent="#accordion-2">
+											<img src="images/fr.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<div class="panel-collapse collapse" id="skill-8" role="tabpanel" aria-labelledby="headingTwo">
+											<h3 class="project-title">French</h3>
+											<ul class="skill-list">
+												<li><span>Native speaker</span></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="col-xs-6 col-section-title">
+							<div class="project-slider-wrapper">
+								<div id="accordion-3" class="project-slider left-align" role="tablist">
+									<div class="panel project-wrapper " id="headingOne">
+										<a data-toggle="collapse" href="#skill-9" role="button" aria-expanded="false">
+											<img src="images/kanban.png"/>
+											<div class="expand">
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										
+										<div class="panel-collapse collapse" id="skill-9" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion-3">
+											<h3 class="project-title">Management</h3>
+											<ul class="skill-list">
+												<li><span>Project management</span></li>
+												<li><span>Agile methodology</span></li>
+												<li><span>Kanban</span></li>
+												<li><span>Suite Office</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="col-sm-2 section-title"><h1>SKILLS</h1></div>
 					</div>
-				</div>	
+					
+					
+				</div>
+				<div class="line horizontal-vertical visible-responsive"></div>
 			</div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>Quick, scroll !</span><span>Too late</span><span>You will hear about my super-interesting projects</span><span>For a very loooong time</span></div></div></div>
-		</div>
-
-		<footer data-section-name="contact" data-hub-color="lightgreen" data-hub-text="My footer text here" data-hub-scroll-down="left top" data-hub-scroll-up="top left" class="section medium">
-			<div class="line vertical half top left small-xs"></div>
-			<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"><span>28 years old</span><span>French</span><span>Well... that's me !</span></div></div></div>
-			<h1>CONTACT</h1>
 			
-			<div class="section-container row-1">
-				<div class="row">
-					<div class="col-sm-2 section-title">
+			<div data-anchor="education" class="section medium-dark row-2">
+				<div class="line horizontal-vertical"></div>
+				
+				
+				<div class="section-container row-1">
+					<div class="row">
+						<div class="col-xs-12 col-section-title">
+							<div class="timeline horizontal row subsection">
+								<div class="col-xs-12 col-md-3 timeline-item">
+									
+									<div class="left-wrapper">
+										<h2>KLEEGROUP</h2>
+									</div>
+									<div class="right-wrapper">
+										<h3 class="">Advanced Javascript</h3>
+										<div class="date">2 days - 2017</div>
+										<h3 class="">Project Manager</h3>
+										<div class="date">5 days - 2016</div>
+										<h3 class="">Jalios Developper Diploma</h3>
+										<div class="date">2017</div>
+									</div>
+									<div class="bullet"></div>
+								</div>
+								
+								<div class="col-xs-12  col-md-4 timeline-item">
+									<div class="bullet"></div>
+									<div class="left-wrapper">
+										<h2>Nancy School of Engineering</h2>
+									</div>
+									<div class="right-wrapper">
+										<h3 class="">Master’s degree in Information and Systems</h3>
+										<div class="date">2010 - 2014</div>
+										<p class="excerpt">Main subjects: Database, Semantics, SI, Security, Modeling, Integration, Video Games</p>
+									</div>
+								</div>
+								<div class="col-xs-12  col-md-5 timeline-item">
+									<div class="bullet"></div>
+									<div class="left-wrapper">
+										<h2>Preparatory classes for engineering school</h2>
+									</div>
+									<div class="right-wrapper">
+										<h3 class="">Mathematics & Phsyics</h3>
+										<div class="date">2008 - 2010</div>
+										<p class="excerpt">Main subjects: Mathematics, Physics, Algorithmic</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 section-title">
+							<h1>EDUCATION</h1>
+						</div>
 					</div>
-					<div class="col-xs-12 col-section-title">
-						<ul>
-							<li><div class="img-wrapper"><a href="mailto:lilian.chiassai@gmail.com"><img src="images/mail.png"></a></div><span><a href="mailto:lilian.chiassai@gmail.com">lilian.chiassai@gmail.com</a></span></li>
-							<li><div class="img-wrapper"><a href="tel:+33-73556543"><img src="images/phone.png"></a></div><span><a href="tel:+33-73556543">(+33) 06 73 55 65 43</a></span></li>
-							<li><div class="img-wrapper"><img src="images/location.png"></div><span>10 Impasse de la Madeleine 14000 Caen France</span></li>
-							<li><div class="img-wrapper"><a href="https://www.linkedin.com/in/lilian-chiassai-60a9a6a2/"><img src="images/in.png"></a></div><span>&nbsp;</span></li>
-							<li><div class="img-wrapper"><a href="https://github.com/AllirionX"><img src="images/github.png"></a></div><span>&nbsp;</span></li>
-							<li><div class="img-wrapper"><a href="https://stackoverflow.com/users/10631518/allirionx"><img src="images/stack.png"></a></div><span>&nbsp;</span></li>
-						</ul>
+				</div>
+				<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
+			</div>
+			
+			<div data-anchor="achievements" class="section dark row-2 fp-auto-height-responsive">
+				
+				<div class="section-container">
+					<div class="row">
+						<div class="col-xs-6  col-sm-6 col-md-12">
+							<div class="row">
+								<div class="col-xs-12 col-section-title">
+									<div class="project-slider-wrapper">
+										<div id="accordion-4" class="project-slider right-align" role="tablist">
+											<div class="panel project-wrapper " id="headingOne">
+												<a data-toggle="collapse" href="#project-1" role="button" aria-expanded="false" data-parent="#accordion-4">
+													<img src="images/gravity.png"/>
+													<div class="expand">
+														<span></span>
+														<span></span>
+													</div>
+												</a>
+												<div class="panel-collapse collapse" id="project-1" role="tabpanel" aria-labelledby="headingOne">
+													<h3 class="project-title">Gravity Run</h3>
+													<div class="date">2018 - Dev in progress</div>
+													<p class="project-desc">A platformer built in which your character has power on the gravity ! </p>
+													<p class="project-link"><a href="https://github.com/AllirionX/gravity">Github repository</a></p>
+													<p class="project-skills">#videogame #gamedesign #unity</p>
+												</div>
+											</div>
+											<div class="panel project-wrapper " id="headingTwo">
+												<a data-toggle="collapse" href="#project-2" role="button" aria-expanded="false" data-parent="#accordion-4">
+													<img src="images/pandemic.jpg"/>
+													<div class="expand">
+														<span></span>
+												<span></span>
+													</div>
+												</a>
+												<div class="panel-collapse collapse" id="project-2" role="tabpanel" aria-labelledby="headingTwo">
+													<h3 class="project-title">Pandemic AI</h3>
+													<div class="date">2018 - Dev in progress</div>
+													<p class="project-desc">An AI that uses a Monte Carlo Tree Search to beat the board game Pandemic (assymetric, non-zero-sum, imperfect information, non-deterministic...). </p>
+													<p class="project-link"><a href="https://github.com/AllirionX/pandemic-ai">Github repository</a></p>
+													<p class="project-skills">#java #algorithm #MCTS #neuralnetwork</p>
+												</div>
+											</div>
+											<div class="panel project-wrapper " id="headingThree">
+												<a data-toggle="collapse" href="#project-3" role="button" aria-expanded="false" data-parent="#accordion-4">
+													<img src="images/website.png">
+													<div class="expand">
+														<span></span>
+												<span></span>
+													</div>
+												</a>
+												<div class="panel-collapse collapse" id="project-3" role="tabpanel" aria-labelledby="headingThree" >
+													<h3 class="project-title">Personnal Website</h3>
+													<div class="date">2018</div>
+													<p class="project-desc">Looks familiar ? That's my new responsive website !</p>
+													<p class="project-link"><a href="https://github.com/AllirionX/online-CV">Github repository</a></p>
+													<p class="project-skills">#game #gamedesign #projectmanagement</p>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-sm-2 section-title">
+									<h1>PROJECTS</h1>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-12">
+							<div class="row">
+								<div class="col-sm-2 section-title">
+									<h1>ACHIEVEMENTS</h1>
+								</div>
+								<div class="col-xs-12 col-section-title">
+									<div class="project-slider-wrapper">
+										<div id="accordion-5" class="project-slider left-align" role="tablist">
+											<div class="panel project-wrapper " id="headingFour">
+												<a data-toggle="collapse" href="#project-4" role="button" aria-expanded="false" data-parent="#accordion-5">
+													<img src="images/ZSN.png"/>
+													<div class="expand">
+														<span></span>
+												<span></span>
+													</div>
+												</a>
+												
+												<div class="panel-collapse collapse" id="project-4" role="tabpanel" aria-labelledby="headingFour">
+													<h3 class="project-title">AAES</h3>
+													<div class="date">2014</div>
+													<p class="project-desc">I co-founded a non profit organization that gathers hundred of players for live role playing nights once or twice a year. I also built its website.</p>
+													<p class="project-link">
+														<a href="https://asso-aaes.fr/">Learn more</a><br/>
+														<a href="https://github.com/AllirionX/aaes">Github repository</a>
+													</p>
+													<p class="project-skills">#event #web #projectmanagement</p>
+												</div>
+											</div>
+											<div class="panel project-wrapper " id="headingFive">
+												<a data-toggle="collapse" href="#project-5" role="button" aria-expanded="false" data-parent="#accordion-5">
+													<img src="images/Final_Cover_Omega_Fighters.png"/>
+													<div class="expand">
+														<span></span>
+												<span></span>
+													</div>
+												</a>
+												<div class="panel-collapse collapse" id="project-5" role="tabpanel" aria-labelledby="headingFive">
+													<h3 class="project-title">Omega Fighters 3000</h3>
+													<div class="date">2017</div>
+													<p class="project-desc">An exciting board game in which each team controls its own mecha and try to defeat the opponent team ! It reached the final of one of the most renowned french game prototyping competition.</p>
+													<p class="project-link"><a href="http://centreludique-bb.fr/creagames-2017-et-remise-des-prix-du-37e-concours-de-boulogne-billancourt/non-categorise/creagames-2017">Learn more</a></p>
+													<p class="project-skills">#game #gamedesign #projectmanagement</p>
+												</div>
+											</div>
+											<div class="panel project-wrapper " id="headingSix">
+												<a data-toggle="collapse" href="#project-6" role="button" aria-expanded="false" data-parent="#accordion-5">
+													<img src="images/gunpowder.png"/>
+													<div class="expand">
+														<span></span>
+												<span></span>
+													</div>
+												</a>
+												<div class="panel-collapse collapse" id="project-6" role="tabpanel" aria-labelledby="headingSix" >
+													<h3 class="project-title">Gunpowder</h3>
+													<div class="date">2016</div>
+													<p class="project-desc">A new spanish rock band needed my wordpress skills for a customizable website!</p>
+													<p class="project-link"><a href="http://www.gunpowder-rock.com"/>Learn more</a></p>
+													<p class="project-skills">#web #wordpress #php</p>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
 					</div>	
 				</div>
+				<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
+				<div class="line horizontal-vertical visible-responsive"></div>
 			</div>
-		</footer>
+
+			<div data-anchor="contact" class="fp-auto-height-responsive fp-auto-height section medium">
+				
+				<div class="hub-positioner-wrapper"><div class="hub-positioner"><div class="hub-content"></div></div></div>
+				<div class="section-container">
+					<div class="line vertical half top left small-xs"></div>
+					<h1>CONTACT</h1>
+					<div class="row">
+						<div class="col-sm-2 section-title">
+						</div>
+						<div class="col-xs-12 col-section-title">
+							<ul>
+								<li><div class="img-wrapper"><a href="mailto:lilian.chiassai@gmail.com"><img src="images/mail.png"></a></div><span><a href="mailto:lilian.chiassai@gmail.com">lilian.chiassai@gmail.com</a></span></li>
+								<li><div class="img-wrapper"><a href="tel:+33-73556543"><img src="images/phone.png"></a></div><span><a href="tel:+33673556543">(+33) 06 73 55 65 43</a></span></li>
+								<li><div class="img-wrapper"><img src="images/location.png"></div><span>10 Impasse de la Madeleine 14000 Caen France</span></li>
+								<li><div class="img-wrapper"><a href="https://www.linkedin.com/in/lilian-chiassai-60a9a6a2/"><img src="images/in.png"></a></div><span>&nbsp;</span></li>
+								<li><div class="img-wrapper"><a href="https://github.com/AllirionX"><img src="images/github.png"></a></div><span>&nbsp;</span></li>
+								<li><div class="img-wrapper"><a href="https://stackoverflow.com/users/10631518/allirionx"><img src="images/stack.png"></a></div><span>&nbsp;</span></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		
 		-->
+		
 		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/theme.js"></script>
 		<!--<script type="text/javascript" src="js/slick.js"></script>-->
-		<script type="text/javascript" src="js/jquery.scrollify.js"></script>
+		<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+		
 	</body>
 </html>
