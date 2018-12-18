@@ -22,9 +22,6 @@ function show_menu() {
 	$('.menu input').prop('checked', true);
 }
 
-//Hub animation
-var position;
-
 function doBefore(origin, destination, direction) {
 	
 	//hide hub-content*/
@@ -47,14 +44,21 @@ function doBefore(origin, destination, direction) {
 $(document).ready(function(){
   
   //Loading screen
+  if(window.location.hash) {
+      var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+      var loadercolor = $("[data-anchor="+hash+"]").find(".hub-content").css("background-color");
+	  var backgroundcolor = $("[data-anchor="+hash+"]").css("background-color");
+	  document.documentElement.style.setProperty('--loader-color', loadercolor);
+	  document.documentElement.style.setProperty('--loader-background-color', backgroundcolor);
+  }
   $('body').addClass('load');
  
   setTimeout(function(){
-		$('body').removeClass('load');
         $('body').addClass('loaded');
-		doBefore(1,1,"down");
-		//doAfter();
-    }, 100);
+		setTimeout(function(){
+			$('body').removeClass('load');
+		}, 500);
+    }, 4000);
 	
     //Init fullpage
 	$('#fullpage, #hub').fullpage({
@@ -62,7 +66,7 @@ $(document).ready(function(){
 		scrollOverflow:true,
 		autoScrolling:true,
 		scrollHorizontally: true,
-		responsiveWidth: 992,
+		responsiveWidth: 768,
 		onLeave: function(origin, destination, direction){
 			doBefore(origin, destination, direction);
 		},
@@ -91,7 +95,7 @@ $(document).ready(function(){
 	});
 	
 	$('.panel-collapse').on('shown.bs.collapse hidden.bs.collapse', function() {
-	  if(parseInt($(window).width()) >= 992) {
+	  if(parseInt($(window).width()) >= 768) {
 			$.fn.fullpage.reBuild();
 		}
 	});

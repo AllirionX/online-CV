@@ -23,7 +23,7 @@
 	border-left-color: transparent;
 	}
 	5% {
-	border-left-color: black;
+	border-left-color: var(--loader-color);
 	}
 	19.99% {
 	border-top-color: transparent;
@@ -35,10 +35,10 @@
 	bottom : auto;
 	height: 100%;
 	width: 0;
-	border-top-color: black;
+	border-top-color: var(--loader-color);
 	border-right-color: transparent;
 	border-bottom-color: transparent;
-	border-left-color: black;
+	border-left-color: var(--loader-color);
 	}
 	39.99% {
 	border-right-color: transparent;
@@ -50,8 +50,8 @@
 	right: 0;
 	height: 0;
 	width: 100%;
-	border-top-color: black;
-	border-right-color: black;
+	border-top-color: var(--loader-color);
+	border-right-color: var(--loader-color);
 	border-bottom-color: transparent;
 	border-left-color: transparent;
 	}
@@ -66,8 +66,8 @@
 	width:0%;
 	height: 100%;
 	border-top-color: transparent;
-	border-right-color: black;
-	border-bottom-color: black;
+	border-right-color: var(--loader-color);
+	border-bottom-color: var(--loader-color);
 	border-left-color: transparent;
 	}
 	79.99% {
@@ -82,12 +82,12 @@
 	height: 0;
 	border-top-color: transparent;
 	border-right-color: transparent;
-	border-bottom-color: black;
+	border-bottom-color: var(--loader-color);
 	border-left-color: transparent;
 	}
 	90% {
 	border-left-color:transparent;
-	border-bottom-color: black;
+	border-bottom-color: var(--loader-color);
 	}
 	100% {
 	top : auto;
@@ -125,8 +125,8 @@
 	left:auto;
 	height: 0;
 	width: 100%;
-	border-top-color: black;
-	border-right-color: black;
+	border-top-color: var(--loader-color);
+	border-right-color: var(--loader-color);
 	border-bottom-color: transparent;
 	border-left-color: transparent;
 	}
@@ -140,8 +140,8 @@
 	height: 100%;
 	width: 0;
 	border-top-color: transparent;
-	border-right-color: black;
-	border-bottom-color: black;
+	border-right-color: var(--loader-color);
+	border-bottom-color: var(--loader-color);
 	border-left-color: transparent;
 	}
 	59.99% {
@@ -156,8 +156,8 @@
 	height: 0%;
 	border-top-color: transparent;
 	border-right-color: transparent;
-	border-bottom-color: black;
-	border-left-color: black;
+	border-bottom-color: var(--loader-color);
+	border-left-color: var(--loader-color);
 	}
 	79.99% {
 	top:auto;
@@ -174,12 +174,12 @@
 	border-top-color: top;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
-	border-left-color: black;
+	border-left-color: var(--loader-color);
 	background:none;
 	}
 	95% {
-	border-left-color:black;
-	background-color:black;
+	border-left-color:var(--loader-color);
+	background-color:var(--loader-color);
 	}
 	100% {
 	top : 0;
@@ -188,7 +188,7 @@
 	right: auto;
 	width: 100%;
 	height: 100%;
-	background-color:black;
+	background-color:var(--loader-color);
 	border-top-color: transparent;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
@@ -275,5 +275,17 @@
 	}
 	100% {
 		transform:scale(1,1);
+	}
+}
+
+@keyframes fadeAndHide {
+	0% {
+		opacity:1;
+	}
+	99% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
 	}
 }

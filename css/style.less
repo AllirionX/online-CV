@@ -118,6 +118,8 @@ body {
 		  justify-content: center;
 		  align-items: center;
 		  z-index: 100;
+		  opacity:1;
+		  transition:opacity 0.5s;
 		}
 		div.loader p {
 		  font-family: 'Helvetica', 'Arial', sans-serif;
@@ -128,24 +130,23 @@ body {
 		div.logo {
 		  box-sizing: border-box;
 		  position: absolute;
-		  background-color: @write-light;
 		  transform: rotate(45deg);
 		  
 			@media (max-width: 767px) {
-				width:127px;
-				height:127px;
+				width:70.7px;
+				height:70.7px;
 			}
 			@media (min-width: 768px) {
-				width:156px;
-				height:156px;
+				width:99px;
+				height:99px;
 			}
 			@media (min-width: 992px) {
-				width:184px;
-				height:184px;
+				width:127.28px;
+				height:127.28px;
 			}
 			@media (min-width: 1200px) {
-				width:212px;
-				height:212px;
+				width:155.56px;
+				height:155.56px;
 			}
 		}
 		div.logo::before, div.logo::after {
@@ -170,28 +171,28 @@ body {
 		  transform: rotate(180deg);
 			
 			@media (max-width: 767px) {
-				top: calc(50% - 45px);
-				left: calc(50% - 45px);
-				width: 90px;
-				height: 90px;
+				top: calc(50% - 24px);
+				left: calc(50% - 24px);
+				width: 48px;
+				height: 48px;
 			}
 			@media (min-width: 768px) {
-				top: calc(50% - 55px);
-				left: calc(50% - 55px);
-				width: 110px;
-				height: 110px;
+				top: calc(50% - 34px);
+				left: calc(50% - 34px);
+				width: 68px;
+				height: 68px;
 			}
 			@media (min-width: 992px) {
-				top: calc(50% - 65px);
-				left: calc(50% - 65px);
-				width: 130px;
-				height: 130px;
+				top: calc(50% - 44px);
+				left: calc(50% - 44px);
+				width: 88px;
+				height: 88px;
 			}
 			@media (min-width: 1200px) {
-				top: calc(50% - 75px);
-				left: calc(50% - 75px);
-				width: 150px;
-				height: 150px;
+				top: calc(50% - 54px);
+				left: calc(50% - 54px);
+				width: 108px;
+				height: 108px;
 			}
 			
 		}
@@ -208,6 +209,11 @@ body {
 		}
 	}
 	&.loaded {
+		&.load {
+			.loader {
+				opacity:0;
+			}
+		}
 		.loader {
 			display:none;
 		}
@@ -1131,11 +1137,12 @@ header {
 			display:inline-block;
 			a[data-toggle=collapse] {
 				display:inline-block;
+				overflow:hidden;
 				img {
 					position:relative;
 					z-index:10;
 					filter:grayscale(100%);
-					transition:filter 1s, background 1s;
+					transition:filter 1s, background 1s, transform 0.6s;
 					max-width:100%;
 					background : @medium-lighter;
 				}
@@ -1143,6 +1150,7 @@ header {
 					img {
 						filter:grayscale(50%);
 						background : @medium;
+						transform: scale(1.1,1.1);
 					}
 					.expand {
 						background:@light;
@@ -1956,12 +1964,6 @@ header {
 		
 	}
 	&.horizontal {
-	
-		@media (min-width:768px) and (max-width: 991px) {
-			.timeline-item:first-child .right-wrapper:nth-child(2) {
-				height: 280px;
-			}
-		}
 		@media (min-width : 992px) {
 			height:100%;
 			padding-right:15px;
