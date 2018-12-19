@@ -1123,6 +1123,11 @@ header .hub-content {
   padding: 0px 15px;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .section .section-container {
+    height: auto;
+  }
+}
 .section .section-container.row-1 .row {
   height: 100%;
 }
