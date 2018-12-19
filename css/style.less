@@ -934,7 +934,12 @@ header {
 	}
 
 	&[data-anchor="home"] {
-	
+		@media (max-with:767px) {
+			min-height:100vh;
+			.section-container {
+				min-height:100vh;
+			}
+		}
 	}
 	
 	&[data-anchor="experiences"] {

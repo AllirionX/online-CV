@@ -1252,6 +1252,14 @@ header .hub-content {
     display: none;
   }
 }
+@media (max-with: 767px) {
+  .section[data-anchor="home"] {
+    min-height: 100vh;
+  }
+  .section[data-anchor="home"] .section-container {
+    min-height: 100vh;
+  }
+}
 @media (max-width: 767px) {
   .section[data-anchor="experiences"] .hub-positioner-wrapper {
     top: 80px;
