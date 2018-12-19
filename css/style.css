@@ -1159,6 +1159,11 @@ header .hub-content {
   border-right: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
 }
+@media (max-width: 767px) {
+  .section .section-container .row div[class^=col-] {
+    height: auto;
+  }
+}
 .section .section-container .row div[class^=col-]:first-child {
   border-left: none;
 }
@@ -1584,7 +1589,7 @@ header .hub-content {
   .section[data-anchor="education"] .section-container.row-1 .row {
     height: auto;
     padding-bottom: 50px;
-    min-height: 100%;
+    min-height: none;
   }
 }
 @media (max-width: 767px) {
