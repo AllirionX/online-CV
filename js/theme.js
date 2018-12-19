@@ -1,11 +1,3 @@
-'use strict';
-
-
-(function($) {
-})
-
-var scrolling;
-
 //Menu interaction
 function show_hide_menu(){
 	if ($('.menu input').is(':checked')){
@@ -65,17 +57,13 @@ $(document).ready(function(){
 		//options here,
 		scrollOverflow:true,
 		autoScrolling:true,
-		scrollHorizontally: true,
 		responsiveWidth: 768,
 		onLeave: function(origin, destination, direction){
 			doBefore(origin, destination, direction);
-		},
-		function(){
-		var pluginContainer = $(this);
-		alert("The resulting DOM structure is ready");
-	}
+		}
 	});
-  //Burger menu and interaction
+  
+    //Burger menu interaction
 	$(document).on('click', function(event) {
 		var target = $(event.target);
 		if(parseInt($(window).width()) < 992 && $('.menu input').is(':checked') && (target.parents('.menu').length === 0  || target.hasClass('sublayer'))) {
@@ -87,6 +75,7 @@ $(document).ready(function(){
 			hide_menu();
 		}
 	});
+	
 	//Menu links
 	$("a[href^='#']").click(function(e){
 		if(parseInt($(window).width()) < 992) {
@@ -94,6 +83,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	//Adjust section height after adding content
 	$('.panel-collapse').on('shown.bs.collapse hidden.bs.collapse', function() {
 	  if(parseInt($(window).width()) >= 768) {
 			$.fn.fullpage.reBuild();
