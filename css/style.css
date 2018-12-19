@@ -442,7 +442,7 @@ body.load div.logo::after {
 body.load div.logo::before {
   top: 0;
   left: 0;
-  animation: border-before 3.5s 1 linear forwards;
+  animation: border-before 3s 1 linear forwards;
 }
 body.load div.inside {
   position: absolute;
@@ -488,7 +488,7 @@ body.load div.inside::before {
   border: 3px solid transparent;
   width: 0;
   height: 0;
-  animation: border-inside 3.5s 0.35s 1 linear;
+  animation: border-inside 3s 0.3s 1 linear;
 }
 body.loaded.load .loader {
   opacity: 0;
