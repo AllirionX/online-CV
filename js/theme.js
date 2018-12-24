@@ -50,7 +50,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$('body').removeClass('load');
 		}, 500);
-    }, 3800);
+    }, 2800);
 	
     //Init fullpage
 	$('#fullpage, #hub').fullpage({
