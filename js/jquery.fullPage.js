@@ -499,6 +499,7 @@
             else if(isResponsive){
                 setAutoScrolling(originals.autoScrolling, 'internal');
                 setFitToSection(originals.autoScrolling, 'internal');
+
                 $(SECTION_NAV_SEL).show();
                 $body.removeClass(RESPONSIVE);
                 $.isFunction( options.afterResponsive ) && options.afterResponsive.call( container, active);
@@ -547,10 +548,11 @@
             options.scrollBar = options.scrollBar || options.hybrid;
 
             setOptionsFromDOM();
+            responsive();
             prepareDom();
             setAllowScrolling(true);
             setAutoScrolling(options.autoScrolling, 'internal');
-            responsive();
+            //responsive();
 
             //setting the class for the body element
             setBodyClass();
