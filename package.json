@@ -1,0 +1,28 @@
+{
+  "name": "onlinecv",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllirionX/online-CV.git"
+  },
+  "author": "Lilian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AllirionX/online-CV/issues"
+  },
+  "homepage": "https://github.com/AllirionX/online-CV#readme",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-watch": "latest",
+    "gulp-less": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "browser-sync": "latest"
+  }
+}
